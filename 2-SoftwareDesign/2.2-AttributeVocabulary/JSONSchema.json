@@ -1,0 +1,97 @@
+{
+  "description": "Опис предметної області",
+  "type": "object",
+  "properties": {
+    "user": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Ідентифікаційний код користувача"
+        },
+        "firstName": {
+          "type": "string",
+          "description": "Ім'я"
+        },
+        "lastName": {
+          "type": "string",
+          "description": "прізвище"
+        },
+        "email": {
+          "type": "string",
+          "description": "електрона скринька"
+        }
+      },
+      "required": [
+        "id",
+        "firstName",
+        "email"
+      ]
+    },
+    "course": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Ідентифікаційний код курсу"
+        },
+        "name": {
+          "type": "string",
+          "description": "назва курсу"
+        },
+        "description": {
+          "type": "string",
+          "description": "короткий опис курсу"
+        },
+        "keyWords": {
+          "type": "string[]",
+          "description": "ключові слова"
+        },
+        "price": {
+          "type": "number",
+          "description": "ціна"
+        }
+      },
+      "required": [
+        [
+          "id",
+          "name",
+          "description",
+          "keyWords",
+          "price"
+        ]
+      ]
+    },
+    "chat": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Ідентифікаційний код чату"
+        },
+        "usersId": {
+          "type": "string",
+          "description": "Ідентифікаційний код користувачів чату"
+        },
+        "messages": {
+          "type": "object[]",
+          "description": "повідомлення чату",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Ідентифікаційний код повідомлення"
+            },
+            "senderId": {
+              "type": "string",
+              "description": "Ідентифікаційний код відправника"
+            },
+            "data": {
+              "type": "string",
+              "description": "повідомлення"
+            }
+          }
+        }
+      }
+    }
+  }
+}

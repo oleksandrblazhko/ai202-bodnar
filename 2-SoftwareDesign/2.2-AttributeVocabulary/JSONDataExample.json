@@ -1,0 +1,44 @@
+{
+  "user": {
+    "id": "12jh312go1iu231iu23go12i31",
+    "firstName": "Ілля",
+    "lastName": "Боднар",
+    "email": "qweqwe@sdfsd.com"
+  },
+  "course": {
+    "id": "112h3oi112v31gf2i3u1gp2",
+    "name": "Course #1",
+    "description": "description",
+    "keyWords": [
+      "keyWord#1",
+      "keyWord#3",
+      "keyWord#2"
+    ],
+    "price": 12
+  },
+  "chat": {
+    "id": "i12b3i123o1i273g1o8273t1ipj23vo1",
+    "usersId": [
+      "1u23b1iuh23v1ou23v1o2h3",
+      "jh12b3l12j31k23j1p",
+      "hb1q1923y18239182u12i3o1"
+    ],
+    "messages": [
+      {
+        "id": "187128g12g012-80bi-9u12",
+        "senderId": "12jh312go1iu231iu23go12i31",
+        "data": "повідомлення №1"
+      },
+      {
+        "id": "asu7i123hbo123bp1i2301",
+        "senderId": "12jh312go1iu231iu23go12i31",
+        "data": "повідомлення №2"
+      },
+      {
+        "id": "12o3uy1g9283vy12o3i1g0",
+        "senderId": "12jh312go1iu231iu23go12i31",
+        "data": "повідомлення №3"
+      }
+    ]
+  }
+}
