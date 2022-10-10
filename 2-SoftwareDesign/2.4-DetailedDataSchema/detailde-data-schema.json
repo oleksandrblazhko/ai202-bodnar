@@ -1,0 +1,128 @@
+{
+  "description": "Опис предметної області",
+  "type": "object",
+  "properties": {
+    "user": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Ідентифікаційний код користувача",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "firstName": {
+          "type": "string",
+          "description": "Ім'я",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "lastName": {
+          "type": "string",
+          "description": "прізвище",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "email": {
+          "type": "string",
+          "description": "електрона скринька",
+          "minLength": 1,
+          "maxLength": 100
+        }
+      },
+      "required": [
+        "id",
+        "firstName",
+        "email"
+      ]
+    },
+    "course": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Ідентифікаційний код курсу",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "name": {
+          "type": "string",
+          "description": "назва курсу",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "description": {
+          "type": "string",
+          "description": "короткий опис курсу",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "keyWords": {
+          "type": "array",
+          "description": "ключові слова",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        },
+        "price": {
+          "type": "number",
+          "description": "ціна",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description",
+        "keyWords",
+        "price"
+      ]
+    },
+    "chat": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Ідентифікаційний код чату",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "usersId": {
+          "type": "string",
+          "description": "Ідентифікаційний код користувачів чату",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "messages": {
+          "type": "array",
+          "description": "повідомлення чату",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Ідентифікаційний код повідомлення",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "senderId": {
+                "type": "string",
+                "description": "Ідентифікаційний код відправника",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "data": {
+                "type": "string",
+                "description": "повідомлення",
+                "minLength": 1,
+                "maxLength": 100
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
