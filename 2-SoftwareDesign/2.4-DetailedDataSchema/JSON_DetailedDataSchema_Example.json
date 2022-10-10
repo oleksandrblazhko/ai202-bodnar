@@ -24,7 +24,7 @@
           "maxLength": 100
         },
         "email": {
-          "type": "string",
+          "format": "email",
           "description": "електрона скринька",
           "minLength": 1,
           "maxLength": 100
