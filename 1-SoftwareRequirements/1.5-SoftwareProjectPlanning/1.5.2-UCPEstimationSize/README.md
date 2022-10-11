@@ -1,0 +1,1 @@
+### [Оцінка трудомісткості процесу розробки програмного продукту](https://docs.google.com/spreadsheets/d/1wgbVawmr4oS-_aIG8sVmyubUxRgKZLo0nIF031AOtYA/edit?usp=sharing)
