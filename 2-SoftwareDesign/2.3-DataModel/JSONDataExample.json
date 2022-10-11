@@ -1,0 +1,81 @@
+{
+  "description": "Опис предметної області",
+  "properties": {
+    "user": {
+      "properties": {
+        "id": {
+          "description": "Ідентифікаційний код користувача"
+        },
+        "firstName": {
+          "description": "Ім'я"
+        },
+        "lastName": {
+          "description": "прізвище"
+        },
+        "email": {
+          "description": "електрона скринька"
+        }
+      },
+      "required": [
+        "id",
+        "firstName",
+        "email"
+      ]
+    },
+    "course": {
+      "properties": {
+        "id": {
+          "description": "Ідентифікаційний код курсу"
+        },
+        "name": {
+          "description": "назва курсу"
+        },
+        "description": {
+          "description": "короткий опис курсу"
+        },
+        "keyWords": {
+          "description": "ключові слова",
+          "items": {
+            "type": "string"
+          }
+        },
+        "price": {
+          "description": "ціна"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description",
+        "keyWords",
+        "price"
+      ]
+    },
+    "chat": {
+      "properties": {
+        "id": {
+          "description": "Ідентифікаційний код чату"
+        },
+        "usersId": {
+          "description": "Ідентифікаційний код користувачів чату"
+        },
+        "messages": {
+          "description": "повідомлення чату",
+          "items": {
+            "properties": {
+              "id": {
+                "description": "Ідентифікаційний код повідомлення"
+              },
+              "senderId": {
+                "description": "Ідентифікаційний код відправника"
+              },
+              "data": {
+                "description": "повідомлення"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
