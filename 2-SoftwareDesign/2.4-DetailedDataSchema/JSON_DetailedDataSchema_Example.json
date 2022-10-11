@@ -26,6 +26,7 @@
         "email": {
           "format": "email",
           "description": "електрона скринька",
+          "patter": "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:[a-zA-Z0-9-]+)*$/",
           "minLength": 1,
           "maxLength": 100
         }
