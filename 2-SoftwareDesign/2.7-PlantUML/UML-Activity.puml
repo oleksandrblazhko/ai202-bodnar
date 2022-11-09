@@ -1,0 +1,13 @@
+@startuml
+
+start
+:user pays for course;
+:service analyze the payment;
+if (Was the payment successful?) then (Yes)
+  :Payment was successful!;
+else (No)
+  :Error!;
+endif
+stop
+
+@enduml

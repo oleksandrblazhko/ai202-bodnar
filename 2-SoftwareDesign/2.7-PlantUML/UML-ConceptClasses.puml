@@ -1,0 +1,23 @@
+@startuml
+title Classes Diagram
+
+Class User
+Class Cource
+Class AuthSrvice
+Class StoreService
+Class PaymentService
+Class ChattingService
+Class RecommendationService
+
+User"+" <.. "1"ChattingService: receive
+User"1" --> "1"RecommendationService: provide
+
+Cource"+" <.. "+"RecommendationService: receive
+Cource"1" --> "1"ChattingService: receive
+
+AuthSrvice"1" --> "1"User: provide
+PaymentService"1" --> "1"StoreService: provide
+
+StoreService"+" <.. "1"User: receive
+StoreService"+" ..> "1"RecommendationService: receive
+@enduml
