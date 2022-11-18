@@ -1,0 +1,18 @@
+@startuml
+title deployment
+left to right direction
+node "<<Пристрій з підтримкою сучасного браузеру>>" as dk {
+  node "<<Будь-якак ОС>>" {
+    node "<<Веб-браузер>>" {
+      component [.js (React.js)]
+    }
+  }
+}
+interface Клавіатура
+interface Тачскрін
+interface Миша
+
+Клавіатура -- dk
+Тачскрін -- dk
+Миша-- dk
+@enduml

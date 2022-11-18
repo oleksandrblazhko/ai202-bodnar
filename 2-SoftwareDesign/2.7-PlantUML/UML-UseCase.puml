@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+
+actor recomendation_services
+actor payment_services
+actor User
+
+rectangle {
+  User -- (Get course)
+  User -- (Discuss course)
+  User -- (Get course recomendations)
+
+
+  (Get course) <.. (Pay for the course): <<extend>>
+  (Discuss course) ..> (Authorization): <<include>>
+  (Pay for the course) ..> (Authorization): <<include>>
+  (Get course recomendations) ..> (Authorization): <<include>>
+
+  (Get course recomendations) -- recomaendation_services
+  (Pay for the course) -- payment_services
+}
+@enduml
